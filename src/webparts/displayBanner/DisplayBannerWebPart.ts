@@ -23,7 +23,7 @@ export default class DisplayBannerWebPart extends BaseClientSideWebPart<IDisplay
     console.log(this.context.pageContext.user.loginName);
     //Checking user details in group
     checkUserinGroup("Banners", this.context.pageContext.user.email, function (result) {
-      //console.log(result);
+    
       console.log(this.context.pageContext.user);
       if (result == 1) {
         _this.userflag = true;
