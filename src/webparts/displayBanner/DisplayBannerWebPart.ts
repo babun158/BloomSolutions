@@ -114,7 +114,6 @@ var DottedTitle=items[i].Title;
         renderhtml += '</div>';
 
       }
-      
       renderhtml += '</div>';
       ​renderhtml += '<!-- Left and right controls -->';
       renderhtml += '<a class="left carousel-control" href="#carousel-banner" data-slide="prev">';
