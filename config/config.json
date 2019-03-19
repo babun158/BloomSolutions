@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "display-banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayBanner/DisplayBannerWebPart.js",
+          "manifest": "./src/webparts/displayBanner/DisplayBannerWebPart.manifest.json"
+        }
+      ]
+    },
+    "display-announcemnet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayAnnouncemnet/DisplayAnnouncemnetWebPart.js",
+          "manifest": "./src/webparts/displayAnnouncemnet/DisplayAnnouncemnetWebPart.manifest.json"
+        }
+      ]
+    },
+    "display-events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayEvents/DisplayEventsWebPart.js",
+          "manifest": "./src/webparts/displayEvents/DisplayEventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "display-quick-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayQuickLinks/DisplayQuickLinksWebPart.js",
+          "manifest": "./src/webparts/displayQuickLinks/DisplayQuickLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "display-employee-corner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayEmployeeCorner/DisplayEmployeeCornerWebPart.js",
+          "manifest": "./src/webparts/displayEmployeeCorner/DisplayEmployeeCornerWebPart.manifest.json"
+        }
+      ]
+    },
+    "display-pollings-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/displayPollings/DisplayPollingsWebPart.js",
+          "manifest": "./src/webparts/displayPollings/DisplayPollingsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "Bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "moment": {
+      "path": "./src/ExternalRef/js/moment.min.js",
+      "globalName": "moment",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "fullcalendar": {
+      "path": "./src/ExternalRef/js/fullcalendar.min.js",
+      "globalName": "fullCalendar",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "DisplayBannerWebPartStrings": "lib/webparts/displayBanner/loc/{locale}.js",
+    "DisplayAnnouncemnetWebPartStrings": "lib/webparts/displayAnnouncemnet/loc/{locale}.js",
+    "DisplayEventsWebPartStrings": "lib/webparts/displayEvents/loc/{locale}.js",
+    "DisplayQuickLinksWebPartStrings": "lib/webparts/displayQuickLinks/loc/{locale}.js",
+    "DisplayEmployeeCornerWebPartStrings": "lib/webparts/displayEmployeeCorner/loc/{locale}.js",
+    "DisplayPollingsWebPartStrings": "lib/webparts/displayPollings/loc/{locale}.js"
+  }
+}
